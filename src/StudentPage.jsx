@@ -190,7 +190,7 @@ export default function StudentPage() {
     setStatus("connecting...");
     // ✅ Pass language as query parameter
 const roomId = new URLSearchParams(window.location.search).get("room") || "default";
-const wsUrl = `wss://${window.location.hostname}:7142/ws/student?roomId=${roomId}&lang=${targetLang}`;
+const wsUrl = `wss://mvp-flames-production.up.railway.app/ws/student?roomId=${roomId}&lang=${targetLang}`;
 
     console.log(`📡 WebSocket URL: ${wsUrl}`);
     

@@ -204,7 +204,7 @@ export default function TeacherPage() {
     setIsRunning(true);
 
 const roomId = new URLSearchParams(window.location.search).get("room") || "default";
-const ws = new WebSocket(`wss://${window.location.hostname}:7142/ws/teacher-audio?roomId=${roomId}`);
+const ws = new WebSocket(`wss://mvp-flames-production.up.railway.app/ws/teacher-audio?roomId=${roomId}`);
 
     ws.binaryType = "arraybuffer";
     wsRef.current = ws;
